@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@500&display=swap');
+
+@import 'variables';
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h1, h2, h3, h4 {
+  font-family: Raleway, sans-serif;
+}
+
+p, a, span, ul, li, h5, h6 {
+  font-family: Quicksand, sans-serif;
+  font-size: $space-m;
+}
+
+h1 {
+  font-size: $space-xl;
+}
+
+h2 {
+  font-size: $space-l;
+}
+
+h3{
+  font-size: $space-m;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ebebeb;
+    //max-width: 30vw;
+    max-width: fit-content;
+    width: 60ch;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+    .container-item {
+        margin: .5rem 2rem;
+    }
+}
+
+button {
+  padding: $space-s $space-m;
+  transition: .3s;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.primary {
+  border: 1px solid $accent-color;
+  font-family: Raleway, sans-serif;
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.secondary {
+  font-family: Quicksand, sans-serif;
+  border: none;
+  text-decoration: underline;
+  &:hover {
+    background-color: $accent-color
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
